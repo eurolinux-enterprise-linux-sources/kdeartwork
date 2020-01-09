@@ -1,0 +1,58 @@
+--- kdeartwork-4.3.4-patched/kscreensaver/kdesavers/CMakeLists.txt.orig	2011-09-08 07:21:28.239804678 -0400
++++ kdeartwork-4.3.4-patched/kscreensaver/kdesavers/CMakeLists.txt	2011-09-08 07:27:36.979803050 -0400
+@@ -1,8 +1,8 @@ 
+ check_include_files(limits      HAVE_NUMERIC_LIMITS)
+ configure_file (config-kdesavers.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-kdesavers.h )
+ 
+-macro_optional_find_package(Eigen2)
+-macro_log_feature(EIGEN2_FOUND "Eigen2" "A C++ template library for linear algebra" "kdesupport" FALSE "" "Needed to build the krotation and kpendulum screensavers" )
++#macro_optional_find_package(Eigen2)
++#macro_log_feature(EIGEN2_FOUND "Eigen2" "A C++ template library for linear algebra" "kdesupport" FALSE "" "Needed to build the krotation and kpendulum screensavers" )
+ 
+ option(KSCREENSAVER_SOUND_SUPPORT "Build with sound support" OFF)
+ 
+@@ -51,21 +51,21 @@ 
+ if(OPENGL_FOUND AND OPENGL_GLU_FOUND AND QT_QTOPENGL_LIBRARY)
+ 
+   ## krotation, kpendulum need Eigen2
+-  if (EIGEN2_FOUND)
+-    include_directories(${EIGEN2_INCLUDE_DIR})
++   # if (EIGEN2_FOUND)
++   #   include_directories(${EIGEN2_INCLUDE_DIR})
+ 
+-    set(krotation.kss_SRCS rotation.cpp sspreviewarea.cpp)
+-    kde4_add_ui_files(krotation.kss_SRCS rotationcfg.ui)
+-    kde4_add_executable(krotation.kss ${krotation.kss_SRCS})
+-    target_link_libraries(krotation.kss ${KDE4_KDEUI_LIBS} ${QT_QTOPENGL_LIBRARY} ${OPENGL_gl_LIBRARY} ${OPENGL_glu_LIBRARY} ${KDE4WORKSPACE_KSCREENSAVER_LIBRARY})
+-    install(TARGETS krotation.kss ${INSTALL_TARGETS_DEFAULT_ARGS})
+-
+-    set(kpendulum.kss_SRCS pendulum.cpp sspreviewarea.cpp)
+-    kde4_add_ui_files(kpendulum.kss_SRCS pendulumcfg.ui)
+-    kde4_add_executable(kpendulum.kss ${kpendulum.kss_SRCS})
+-    target_link_libraries(kpendulum.kss ${KDE4_KDEUI_LIBS} ${QT_QTOPENGL_LIBRARY} ${OPENGL_gl_LIBRARY} ${OPENGL_glu_LIBRARY} ${KDE4WORKSPACE_KSCREENSAVER_LIBRARY})
+-    install(TARGETS kpendulum.kss ${INSTALL_TARGETS_DEFAULT_ARGS})
+-  endif (EIGEN2_FOUND)
++   #   set(krotation.kss_SRCS rotation.cpp sspreviewarea.cpp)
++   #   kde4_add_ui_files(krotation.kss_SRCS rotationcfg.ui)
++   #   kde4_add_executable(krotation.kss ${krotation.kss_SRCS})
++   #   target_link_libraries(krotation.kss ${KDE4_KDEUI_LIBS} ${QT_QTOPENGL_LIBRARY} ${OPENGL_gl_LIBRARY} ${OPENGL_glu_LIBRARY} ${KDE4WORKSPACE_KSCREENSAVER_LIBRARY})
++   #   install(TARGETS krotation.kss ${INSTALL_TARGETS_DEFAULT_ARGS})
++
++   #   set(kpendulum.kss_SRCS pendulum.cpp sspreviewarea.cpp)
++   #   kde4_add_ui_files(kpendulum.kss_SRCS pendulumcfg.ui)
++   #   kde4_add_executable(kpendulum.kss ${kpendulum.kss_SRCS})
++   #   target_link_libraries(kpendulum.kss ${KDE4_KDEUI_LIBS} ${QT_QTOPENGL_LIBRARY} ${OPENGL_gl_LIBRARY} ${OPENGL_glu_LIBRARY} ${KDE4WORKSPACE_KSCREENSAVER_LIBRARY})
++   #   install(TARGETS kpendulum.kss ${INSTALL_TARGETS_DEFAULT_ARGS})
++   # endif (EIGEN2_FOUND)
+ 
+   set(ksolarwinds.kss_SRCS SolarWinds.cpp )
+   kde4_add_executable(ksolarwinds.kss ${ksolarwinds.kss_SRCS})
+@@ -82,7 +82,7 @@ 
+   target_link_libraries( keuphoria.kss ${KDE4_KDEUI_LIBS} ${QT_QTOPENGL_LIBRARY} ${OPENGL_gl_LIBRARY} ${OPENGL_glu_LIBRARY} ${KDE4WORKSPACE_KSCREENSAVER_LIBRARY})
+   install(TARGETS keuphoria.kss ${INSTALL_TARGETS_DEFAULT_ARGS} )
+ 
+-  install( FILES KFlux.desktop KEuphoria.desktop KSolarWinds.desktop KRotation.desktop KPendulum.desktop DESTINATION  ${SERVICES_INSTALL_DIR}/ScreenSavers )
++  install( FILES KFlux.desktop KEuphoria.desktop KSolarWinds.desktop DESTINATION  ${SERVICES_INSTALL_DIR}/ScreenSavers )
+ 
+ endif(OPENGL_FOUND AND OPENGL_GLU_FOUND AND QT_QTOPENGL_LIBRARY)
+ 

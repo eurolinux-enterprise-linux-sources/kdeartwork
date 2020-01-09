@@ -1,6 +1,6 @@
 Name: kdeartwork
 Version: 4.3.4
-Release: 6%{?dist}
+Release: 7%{?dist}
 Summary: Additional artwork for KDE
 License: GPLv2 and MIT
 Group: User Interface/Desktops
@@ -19,6 +19,10 @@ Source: kdeartwork-4.3.4-patched.tar.bz2
 
 # add missing xscreensaver 
 Patch0: kdeartwork-4.3.0-template.patch
+
+# bz#736624, don't include KPendulum and KRotation screensavers because of
+# missing Eigen2
+Patch1: kdeartwork-4.3.4-screesaver-bz#736624.patch
 
 BuildRequires: kdelibs4-devel >= %{version}
 BuildRequires: kdebase-workspace-devel >= %{version}
@@ -98,6 +102,7 @@ BuildArch: noarch
 %setup -q -n %{name}-%{version}-patched
 
 %patch0 -p1 -b .template
+%patch1 -p1 -b .bz#736624
 
 %build
 
@@ -201,6 +206,9 @@ fi
 
 
 %changelog
+* Tue Jan 24 2012 Than Ngo <than@redhat.com> - 4.3.4-7
+- Resolves: bz#736624, drop KPendulum and KRotation screensavers desktop files
+
 * Thu Jul 08 2010 Than Ngo <than@redhat.com> - 4.3.4-6
 - Resolves: bz#606886, legal issue
 
