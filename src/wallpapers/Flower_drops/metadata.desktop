@@ -1,0 +1,37 @@
+[Desktop Entry]
+Name=Flower Drops
+Name[bg]=Цветни капки
+Name[ca]=Llàgrimes de les flors
+Name[cs]=Květinné kapky
+Name[da]=Flower Drops
+Name[de]=Blumentropfen
+Name[el]=Ρίψη λουλουδιών
+Name[en_GB]=Flower Drops
+Name[es]=Gotas de flor
+Name[et]=Lillepiisad
+Name[fr]=Lâcher de fleurs
+Name[gl]=Pingas nas flores
+Name[hu]=Hulló szirmok
+Name[is]=Blómadögg
+Name[it]=Gocce di fiore
+Name[nb]=Blomsterdråper
+Name[nds]=Blomen
+Name[nl]=Druppels op bloemen
+Name[nn]=Blomedropar
+Name[pl]=Kwiat i krople
+Name[pt]=Pingos nas Flores
+Name[pt_BR]=Pingos nas flores
+Name[ru]=Цветок
+Name[sl]=Kapljice z rožo
+Name[sr]=Цветне капљице
+Name[sr@latin]=Cvetne kapljice
+Name[sv]=Blomdroppar
+Name[tr]=Çiçek Damlaları
+Name[uk]=Краплі роси на квітах
+Name[x-test]=xxFlower Dropsxx
+Name[zh_TW]=花雨
+
+X-KDE-PluginInfo-Name=Flower_drops
+X-KDE-PluginInfo-Author=John Kimbler
+X-KDE-PluginInfo-Email=www.johnkimbler.com
+X-KDE-PluginInfo-License=LGPLv3

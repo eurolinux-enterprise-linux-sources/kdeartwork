@@ -1,0 +1,63 @@
+<ui version="4.0" >
+ <class>StyleDialog</class>
+ <widget class="QWidget" name="StyleDialog" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>201</width>
+    <height>66</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Style Configuration Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" >
+   <item>
+    <widget class="QCheckBox" name="gradients" >
+     <property name="whatsThis" >
+      <string>This option will draw buttons and several other widgets using a gradient texture</string>
+     </property>
+     <property name="text" >
+      <string>Use &amp;gradients</string>
+     </property>
+     <property name="checked" >
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QCheckBox" name="highlights" >
+     <property name="whatsThis" >
+      <string>This option will highlight buttons and several other widgets when the mouse cursor is over them</string>
+     </property>
+     <property name="text" >
+      <string>Highlight on &amp;mouse hover</string>
+     </property>
+     <property name="checked" >
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer>
+     <property name="orientation" >
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" >
+      <size>
+       <width>229</width>
+       <height>91</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+  <tabstops>
+  <tabstop>gradients</tabstop>
+  <tabstop>highlights</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

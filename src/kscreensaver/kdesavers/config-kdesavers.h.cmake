@@ -1,0 +1,1 @@
+#cmakedefine HAVE_NUMERIC_LIMITS 1

@@ -1,0 +1,37 @@
+[Desktop Entry]
+Name=HighTide
+Name[bg]=Прилив
+Name[ca]=Marea alta
+Name[cs]=Příliv
+Name[da]=HighTide
+Name[de]=Hochwasser
+Name[el]=ΥψηλήΠαλίρροια
+Name[en_GB]=HighTide
+Name[es]=Marea alta
+Name[et]=Tõus
+Name[fr]=Marée haute
+Name[gl]=Pleamar
+Name[hu]=Dagály
+Name[is]=Háflóð
+Name[it]=Altamarea
+Name[nb]=Høyvann
+Name[nds]=Hooch Water
+Name[nl]=Hoogwater
+Name[nn]=Høgvatn
+Name[pl]=Przypływ
+Name[pt]=Maré Alta
+Name[pt_BR]=Maré alta
+Name[ru]=Отражение
+Name[sl]=Plima
+Name[sr]=Висока плима
+Name[sr@latin]=Visoka plima
+Name[sv]=Högvatten
+Name[tr]=Büyük Med Cezir
+Name[uk]=Висока хвиля
+Name[x-test]=xxHighTidexx
+Name[zh_TW]=高潮
+
+X-KDE-PluginInfo-Name=HighTide
+X-KDE-PluginInfo-Author=Patrik Eriksson Thelin
+X-KDE-PluginInfo-Email=patrik.et@gmail.com
+X-KDE-PluginInfo-License=LGPLv3
