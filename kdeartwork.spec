@@ -1,6 +1,6 @@
 Name:    kdeartwork
 Version: 4.10.5
-Release: 2%{?dist}
+Release: 4%{?dist}
 Summary: Additional artwork for KDE
 
 License: GPLv2 and LGPLv2+
@@ -198,6 +198,12 @@ fi
 
 
 %changelog
+* Tue Jan 28 2014 Daniel Mach <dmach@redhat.com> - 4.10.5-4
+- Mass rebuild 2014-01-24
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 4.10.5-3
+- Mass rebuild 2013-12-27
+
 * Fri Jul 12 2013 Than Ngo <than@redhat.com> - 1:4.10.5-2
 - fix license tag
 
