@@ -1,0 +1,38 @@
+mimetypes/*, where * is a generic name for the categorie (e.g. audio.svgz)
+replaces any appearance of audio-* (e.g. audio-volume-* as used by kmix) ->
+script needed to treat audio-* similarities in a producitve manner (copy
+audio-x-mp3 to audio-x-aac, audio-x-vorbis...)
+
+apps:
+ * okular
+ * knode
+ * dragonplayers
+ * ksystemlog
+ * ktimetracker
+ * kjava
+ * plasma
+ * ksudoku
+ * kdiamond
+ * kubrick
+ * ksirk
+ * ksquares
+ * bovo
+ * kfourinline
+ * kiriki
+ * kbreakout
+ * kblocks
+ * kollision
+ * akonadi
+ * networkmanager
+ * nepomuk
+
+extra:
+ * ksniffer
+ * knmap
+
+emotes:
+ * face-smile (used for emoteicons KCM)
+
+mime:
+ * text-x-hex (implies: which font was used for the other icons?)
+
